@@ -1,0 +1,17 @@
+INTERGER = -50
+print(-50, type(INTERGER))
+
+FLOAT_NUMBER = 1.456
+print(FLOAT_NUMBER, type(FLOAT_NUMBER))
+
+BOOLEAN = False
+print(BOOLEAN, type(BOOLEAN))
+
+FLOAT_NUM2 = 0.0
+print(FLOAT_NUM2, type(FLOAT_NUM2))
+
+FLOAT_NUM3 = .5
+print(FLOAT_NUM3, type(FLOAT_NUM3))
+
+COMPLEX_NUM1 = 4+5j
+print(COMPLEX_NUM1, type(COMPLEX_NUM1))
