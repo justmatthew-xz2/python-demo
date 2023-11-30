@@ -7,7 +7,6 @@ def ssinput():
         ss = str(
             input('Nhập số giây cần quy đổi (ghi /"exit/" để thoát) >>> '))
         ssconvert(ss)
-        return False
 
 
 def ssconvert(ss):
