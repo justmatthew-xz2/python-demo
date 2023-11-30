@@ -2,15 +2,10 @@ def ssinput():
     global ss
 
     ss = str(input('Nhập số giây cần quy đổi (ghi /"exit/" để thoát?) >>> '))
-    if ss == "exit":
-        return True
-    else:
-        while ss.isdigit() is not True:
-            print("! Bạn chỉ được nhập số !")
-            ss = str(
-                input('Nhập số giây cần quy đổi (ghi /"exit/" để thoát) >>> '))
-            if ss == "exit":
-                return True
+    while ss.isdigit() is not True:
+        print("! Bạn chỉ được nhập số !")
+        ss = str(
+            input('Nhập số giây cần quy đổi (ghi /"exit/" để thoát) >>> '))
         ssconvert(ss)
         return False
 

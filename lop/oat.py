@@ -1,0 +1,1 @@
+ss = int(input("Nhập số giây cần đổi >>>"))
