@@ -3,7 +3,7 @@ def ssinput():
 
     ss = str(input('Nhập số giây cần quy đổi (ghi /"exit/" để thoát?) >>> '))
     while ss.isdigit() is not True:
-        print("! Bạn chỉ được nhập số !")
+        print("! Bạn chỉ được nhập số từ 0 trở lên !")
         ss = str(
             input('Nhập số giây cần quy đổi (ghi /"exit/" để thoát) >>> '))
         ssconvert(ss)
