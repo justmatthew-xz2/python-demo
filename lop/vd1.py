@@ -47,7 +47,7 @@ def ssconvert(ss):
 def ssinput():
     global ss
 
-    ss = str(input('Nhập số giây cần quy đổi (ghi /"exit/" để thoát?) >>> '))
+    ss = str(input('Nhập số giây cần quy đổi (ghi /"exit/" để thoát) >>> '))
     if ss == "exit":
         return True
     else:
