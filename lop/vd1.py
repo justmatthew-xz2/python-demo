@@ -2,7 +2,7 @@ def ssinput():
     global ss
 
     ss = str(input('Nhập số giây cần quy đổi (ghi /"exit/" để thoát?) >>> '))
-    while ss.isdigit() is not True:
+    while ss.isdigit() is False:
         print("! Bạn chỉ được nhập số từ 0 trở lên !")
         ss = str(
             input('Nhập số giây cần quy đổi (ghi /"exit/" để thoát) >>> '))
