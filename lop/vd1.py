@@ -1,6 +1,3 @@
-option = None
-
-
 def ssconvert(ss):
     ss = int(ss)
 
