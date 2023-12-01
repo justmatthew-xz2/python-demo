@@ -1,17 +1,8 @@
-def ssinput():
-    global ss
-
-    ss = str(input('Nhập số giây cần quy đổi (ghi /"exit/" để thoát?) >>> '))
-    while ss.isdigit() is False:
-        print("! Bạn chỉ được nhập số từ 0 trở lên !")
-        ss = str(
-            input('Nhập số giây cần quy đổi (ghi /"exit/" để thoát) >>> '))
-        ssconvert(ss)
+option = None
 
 
 def ssconvert(ss):
     ss = int(ss)
-    global options
 
     d = ss // 86400
     h = ss // 3600 - d*24
@@ -19,25 +10,27 @@ def ssconvert(ss):
     s = ss - d*24*60*60 - h*60*60 - m*60
     print(f'{ss} giây = {d} ngày {h} giờ {m} phút {s} giây')
     print('')
-    ssinput()
 
 
-""" def go():
-    global options
+def ssinput():
+    global ss
 
-    options = str(input('Bạn muốn tiếp tục? (Y/N): ')).lower()
-    try:
-        if options in ['y', 'n']:
-            if options == 'y':
-                return True
-            elif options == 'n':
+    ss = str(input('Nhập số giây cần quy đổi (ghi /"exit/" để thoát) >>> '))
+
+    if ss == "exit":
+        return False
+    else:
+        while ss.isdigit() is not True:
+            print("! Bạn chỉ được nhập số từ 0 trở lên !")
+            ss = str(input('Nhập số giây cần quy đổi (ghi /"exit/" để thoát) >>> '))
+
+            if ss == 'exit':
                 return False
-        else:
-            return False
-    except:
-        return False """
+
+        ssconvert(ss)
+        return True
+
 
 while True:
-    ssinput()
-    if ss == "exit":
+    if ssinput() is False:
         break
