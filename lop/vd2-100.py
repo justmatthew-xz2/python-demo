@@ -6,5 +6,5 @@ p = (a+b+c)/2
 
 print(f'''
 Chu vi: {a+b+c}
-Diện tích: {math.sqrt(p*(p-a)*(p-b)*(p-c))}
+Diện tích: {round(math.sqrt(p*(p-a)*(p-b)*(p-c)), 3)}
 ''')
