@@ -9,8 +9,8 @@ print(numbers)
 print('-------------------------------------')
 
 print(numbers[0])  # 1
-print(numbers[-1])  # aka print(numbers[3]) -> 4
-print(numbers[-3])  # aka print(numbers[1]) -> 2
+print(numbers[-1])  # aka print(numbers[5]) -> 1
+print(numbers[-3])  # aka print(numbers[2]) -> 3.5
 
 print('-------------------------------------')
 
